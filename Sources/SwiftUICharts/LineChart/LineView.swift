@@ -97,7 +97,7 @@ public struct LineView: View {
                     self.indicatorLocation = CGPoint(x: max(value.location.x-30,0), y: 32)
                     self.opacity = 1
                     self.closestPoint = self.getClosestDataPoint(toPoint: value.location, width: geometry.frame(in: .local).size.width-30, height: 240)
-                    self.hideHorizontalLines = true
+                    self.hideHorizontalLines = false
                 })
                     .onEnded({ value in
                         self.opacity = 0
