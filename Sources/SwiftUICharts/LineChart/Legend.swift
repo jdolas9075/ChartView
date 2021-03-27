@@ -87,7 +87,7 @@ struct Legend: View {
         guard let max = points.max() else { return nil }
         guard let min = points.min() else { return nil }
         let step = Double(max - min)/4
-        return [min+step * 0, min+step * 1, min+step * 2, min+step * 3, min+step * 4]
+        return [min, 0.0, max]
     }
 }
 
