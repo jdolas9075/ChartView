@@ -41,7 +41,7 @@ struct Legend: View {
     
     var body: some View {
         ZStack(alignment: .topLeading){
-            ForEach((0...4), id: \.self) { height in
+            ForEach((0...3), id: \.self) { height in
                 HStack(alignment: .center){
                     Text("\(self.getYLegendSafe(height: height), specifier: specifier)").offset(x: 0, y: self.getYposition(height: height) )
                         .foregroundColor(Colors.LegendText)
