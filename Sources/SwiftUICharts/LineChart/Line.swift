@@ -20,7 +20,7 @@ public struct Line: View {
     var gradient: GradientColor = GradientColor(start: Colors.GradientPurple, end: Colors.GradientNeonBlue)
     var index:Int = 0
     let padding:CGFloat = 30
-    var curvedLines: Bool = true
+    var curvedLines: Bool = false
     var stepWidth: CGFloat {
         if data.points.count < 2 {
             return 0
